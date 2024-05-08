@@ -15,14 +15,14 @@ func main() {
         let fileURL = URL(fileURLWithPath: "input.txt")
         let fileContent = try String(contentsOf: fileURL)
         let lines = fileContent.components(separatedBy: .newlines)
-        
+
         // Setup output files.
         guard let binOutput = OutputStream(toFileAtPath: "binOutput.txt", append: false) else {
             print("Error creating binOutput file")
             return
         }
         binOutput.open()
-        
+
         guard let palenOutput = OutputStream(toFileAtPath: "palenOutput.txt", append: false) else {
             print("Error creating palenOutput file")
             return
