@@ -1,0 +1,11 @@
+true
+false
+Please input a number!
+true
+Please input a number!
+false
+false
+false
+Please input a number!
+false
+false
